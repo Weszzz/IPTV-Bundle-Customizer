@@ -16,7 +16,7 @@ function rmdir_recursive($dir) {
 }
 
 if(file_exists(__DIR__ . "/Package")) {
-    rmdir_recursive(__DIR__ . "/Package/");
+    rmdir_recursive(__DIR__ . "/Package");
 }
 
 if(!file_exists(__DIR__ . "/Package"))
@@ -26,6 +26,16 @@ if(!file_exists(__DIR__ . "/Package"))
 else
 {
     die('// Could not delete previously made bundle. Please do this manually.');
+}
+
+if(!file_exists(__DIR__ . "/Download"))
+{
+    mkdir(__DIR__ . "/Download");
+}
+
+if(!file_exists(__DIR__ . "/Package"))
+{
+    mkdir(__DIR__ . "/Package");
 }
 
 $zip = new ZipArchive;
