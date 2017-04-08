@@ -33,12 +33,12 @@
             <form action="update_package.php" method="POST">
                 <div class="form-group">
                     <label for="bundlename">Fill in some name for your bundle</label>
-                    <input class="form-control" name="bundlename" id="bundlename" type="text" placeholder="Blablabla" autocomplete="off">
+                    <input class="form-control" name="bundlename" id="bundlename" type="text" placeholder="Blablabla" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
                     <label for="playlist">Fill in some name for your bundle</label>
-                    <textarea class="form-control" style="height: 250px;" name="playlist" id="playlist" placeholder="#EXTM3U" autocomplete="off"></textarea>
+                    <textarea class="form-control" style="height: 250px;" name="playlist" id="playlist" placeholder="#EXTM3U" autocomplete="off" required></textarea>
                 </div>
 
                 <div class="form-group">
