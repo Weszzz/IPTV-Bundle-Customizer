@@ -37,6 +37,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="playlist">Fill in some name for your bundle</label>
+                    <textarea class="form-control" style="height: 250px;" name="playlist" id="playlist" placeholder="#EXTM3U" autocomplete="off"></textarea>
+                </div>
+
+                <div class="form-group">
                     <button id="bundlename" class="btn btn-info"><span class="glyphicon glyphicon-fire"></span> Click here to let the magic happen!</button>
                 </div>
             </form>
@@ -47,8 +52,4 @@
 
 </body>
 
-
 </html>
-
-
-
